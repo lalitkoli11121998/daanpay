@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daanpay — Donate to verified temples</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">Daanpay</div>
+    <nav class="nav-links">
+      <a href="#">Temples</a>
+      <a href="#">How it works</a>
+      <a href="#">About</a>
+      <a href="#">Support</a>
+      <a class="btn btn-outline" href="#">Log in</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="#">Temples</a>
+    <a href="#">How it works</a>
+    <a href="#">About</a>
+    <a href="#">Support</a>
+    <a href="#">Log in</a>
+  </nav>
+</header>
+
+<section class="hero" style="padding-bottom:0;margin-bottom:0;">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Give with devotion, backed by verification.</h1>
+      <p class="lead">Donate to temples across India in under a minute — UPI, QR, or card — and receive an instant, trustworthy receipt.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#">Find a temple to donate to</a>
+        <a class="btn btn-ghost-light" href="#">How it works</a>
+      </div>
+      <div class="hero-social">
+        <div class="avatar-stack">
+          <span style="background:#B8791C;">RS</span>
+          <span style="background:#7A2331;">AK</span>
+          <span style="background:#1F7A4D;">MP</span>
+          <span style="background:#534AB7;">TN</span>
+        </div>
+        <p>Joined by <b>12,400+</b> devotees this month</p>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>₹2.4 Cr+</b><span>Donated through the platform</span></div>
+        <div class="stat"><b>180+</b><span>Verified temples</span></div>
+        <div class="stat"><b>60 sec</b><span>Average time to donate</span></div>
+      </div>
+    </div>
+    <div class="hero-art-wrap">
+      <svg class="hero-art" viewBox="0 0 420 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.9" stroke="#E3A94D" stroke-width="1.4">
+          <polygon points="210,20 235,70 185,70" />
+          <rect x="150" y="70" width="120" height="24" />
+          <polygon points="150,94 270,94 290,130 130,130" />
+          <rect x="140" y="130" width="140" height="26" />
+          <polygon points="120,156 300,156 320,200 100,200" />
+          <rect x="90" y="200" width="240" height="150" />
+          <line x1="90" y1="240" x2="330" y2="240" />
+          <line x1="150" y1="200" x2="150" y2="350" />
+          <line x1="210" y1="200" x2="210" y2="350" />
+          <line x1="270" y1="200" x2="270" y2="350" />
+          <circle cx="150" cy="220" r="10" />
+          <circle cx="270" cy="220" r="10" />
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="trust-strip">
+  <div class="wrap trust-strip-row">
+    <div class="pay-badges">
+      <span>UPI</span>
+      <span>QR code</span>
+      <span>Debit card</span>
+      <span>Credit card</span>
+      <span>256-bit SSL secured</span>
+    </div>
+    <div class="ticker">
+      <span class="dot"></span>
+      <span class="msg" id="ticker-text">Anita from Pune donated ₹501 to Siddhivinayak Temple · 2 min ago</span>
+    </div>
+  </div>
+</div>
+
+<div class="search-band">
+  <div class="wrap">
+    <div class="search-row">
+      <input class="search-input" type="text" placeholder="Search by temple name, deity, or city">
+      <button class="btn btn-primary">Search</button>
+    </div>
+    <div class="chip-row">
+      <span class="chip">Tirupati</span>
+      <span class="chip">Kashi Vishwanath</span>
+      <span class="chip">Siddhivinayak</span>
+      <span class="chip">Shirdi</span>
+      <span class="chip">Meenakshi Amman</span>
+      <span class="chip">Vaishno Devi</span>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Featured temples</h2>
+        <p>A starting point — every temple listed here has completed our verification process.</p>
+      </div>
+      <a class="link-more" href="#">Browse all temples →</a>
+    </div>
+    <div class="card-row">
+      <div class="temple-card">
+        <div class="temple-img"><img src="temples/rameshwaram/images/rameshwaram.jpg" alt="" loading="lazy"></div>
+        <div class="temple-body">
+          <h3>Rameshwaram Dham</h3>
+          <div class="temple-loc">Rameswaram, Tamil Nadu</div>
+          <div class="temple-meta">
+            <span class="verified">Verified</span>
+            <span class="donor-count">3,120 donors</span>
+          </div>
+        </div>
+      </div>
+      <div class="temple-card">
+        <div class="temple-img"><img src="temples/badrinath/images/badrinath.jpg" alt="" loading="lazy"></div>
+        <div class="temple-body">
+          <h3>Badrinath Dham</h3>
+          <div class="temple-loc">Badrinath, Uttarakhand</div>
+          <div class="temple-meta">
+            <span class="verified">Verified</span>
+            <span class="donor-count">2,845 donors</span>
+          </div>
+        </div>
+      </div>
+      <div class="temple-card">
+        <div class="temple-img"><img src="temples/jagannath/images/jagannath.jpg" alt="" loading="lazy"></div>
+        <div class="temple-body">
+          <h3>Jagannath Dham</h3>
+          <div class="temple-loc">Puri, Odisha</div>
+          <div class="temple-meta">
+            <span class="verified">Verified</span>
+            <span class="donor-count">4,012 donors</span>
+          </div>
+        </div>
+      </div>
+      <div class="temple-card">
+        <div class="temple-img"><img src="temples/dwarkadish/images/dwarkadish.jpg" alt="" loading="lazy"></div>
+        <div class="temple-body">
+          <h3>Dwarkadish Dham</h3>
+          <div class="temple-loc">Dwarka, Gujarat</div>
+          <div class="temple-meta">
+            <span class="verified">Verified</span>
+            <span class="donor-count">1,988 donors</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2>Browse by state</h2></div>
+    </div>
+    <div class="state-grid">
+      <div class="state-chip">Andhra Pradesh</div>
+      <div class="state-chip">Tamil Nadu</div>
+      <div class="state-chip">Uttar Pradesh</div>
+      <div class="state-chip">Maharashtra</div>
+      <div class="state-chip">Karnataka</div>
+      <div class="state-chip">Kerala</div>
+      <div class="state-chip">Gujarat</div>
+      <div class="state-chip">Rajasthan</div>
+      <div class="state-chip">West Bengal</div>
+      <div class="state-chip">Telangana</div>
+      <div class="state-chip">Odisha</div>
+      <div class="state-chip">Punjab</div>
+    </div>
+  </div>
+</section>
+
+<section class="how-band">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>How a donation works</h2>
+        <p>Three steps, no account required to get started.</p>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Choose a temple</h3>
+        <p>Search or browse verified temples by name, deity, or location.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Pick an amount and pay</h3>
+        <p>Choose a suggested amount or enter your own, then pay with UPI, QR, debit, or credit card.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Get your receipt instantly</h3>
+        <p>A digital receipt is generated immediately — download, print, or email it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Why donate through Daanpay</h2>
+      </div>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <h3>Verified temples</h3>
+        <p>Every temple on the platform is confirmed before it can accept donations.</p>
+      </div>
+      <div class="trust-item">
+        <h3>Secure payments</h3>
+        <p>Payments are processed through licensed gateways — we never store your card details.</p>
+      </div>
+      <div class="trust-item">
+        <h3>Instant receipts</h3>
+        <p>Every donation generates a receipt the moment payment is confirmed.</p>
+      </div>
+      <div class="trust-item">
+        <h3>Full transparency</h3>
+        <p>Track every donation you've made and where it went, at any time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="testimonial">
+      <p class="quote">"I used to send money through a relative near the temple. Now I donate directly, and I actually get a receipt I can keep."</p>
+      <div class="who">Radhika S. — donor since 2025</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="margin-bottom:10px;">Daanpay</div>
+        <p style="font-size:13.5px;color:var(--ink-muted);max-width:220px;line-height:1.6;">A trusted way to donate to temples across India.</p>
+      </div>
+      <div>
+        <h4>Platform</h4>
+        <a href="#">Browse temples</a>
+        <a href="#">How it works</a>
+        <a href="#">About us</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="#">Contact us</a>
+        <a href="#">FAQs</a>
+        <a href="#">Report an issue</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Terms of service</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Refund policy</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Daanpay. All donations are processed securely.</span>
+      <span>Made for devotees, everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
