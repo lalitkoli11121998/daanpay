@@ -22,6 +22,7 @@ body{
   background:var(--stone-50);
   -webkit-font-smoothing:antialiased;
 }
+html{scroll-behavior:smooth;}
 h1,h2,h3{font-family:'Fraunces',serif;font-weight:500;line-height:1.15;letter-spacing:-0.01em;}
 a{color:inherit;text-decoration:none;}
 img{max-width:100%;display:block;}
@@ -179,7 +180,7 @@ section{padding:64px 0;}
 /* Temple cards */
 .card-row{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
 .temple-card{
-  background:#fff;border:1px solid var(--border);border-radius:var(--radius-md);
+  display:block;background:#fff;border:1px solid var(--border);border-radius:var(--radius-md);
   overflow:hidden;cursor:pointer;transition:border-color .15s,transform .15s,box-shadow .15s;
 }
 .temple-card:hover{border-color:var(--gold-500);transform:translateY(-3px);box-shadow:0 12px 24px rgba(62,15,23,.09);}
