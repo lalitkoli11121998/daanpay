@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.body.appendChild(toastEl);
   var toastTimer = null;
 
-  function showToast(message) {
+function showToast(message) {
     toastEl.textContent = message;
     toastEl.classList.add('show');
     clearTimeout(toastTimer);
@@ -44,11 +44,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
   chips.forEach(function (chip) {
     chip.addEventListener('click', function () {
-      chips.forEach(function (c) { c.classList.remove('active'); });
-      chip.classList.add('active');
-      if (searchInput) {
-        searchInput.value = chip.textContent;
-      }
+      var chipRoutes = {
+        'Tirupati': 'tirupati-balaji',
+        'Kashi Vishwanath': 'kashi-vishwanath',
+        'Siddhivinayak': 'siddhivinayak',
+        'Shirdi': 'shirdi-sai-baba',
+        'Meenakshi Amman': 'meenakshi-amman',
+        'Vaishno Devi': 'vaishno-devi'
+      };
+      var templeId = chipRoutes[chip.textContent.trim()];
+      if (templeId) window.location.href = '/temples/' + templeId;
     });
   });
 
@@ -152,9 +157,10 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ---------- Temple cards ---------- */
   document.querySelectorAll('.temple-card').forEach(function (card) {
     card.addEventListener('click', function () {
-      var name = card.querySelector('h3') ? card.querySelector('h3').textContent : 'this temple';
-      // Placeholder for real navigation: window.location.href = 'temple-details.html?id=...';
-      showToast('Opening ' + name + '…');
+      var templeId = card.id;
+      if (templeId) {
+        window.location.href = '/temples/' + templeId;
+      }
     });
   });
 
