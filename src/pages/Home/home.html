@@ -3,35 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daanpay — Donate to verified temples</title>
+<title>DaanPay — Donate to verified temples</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="home.css">
 </head>
 <body>
-
+ 
 <header>
   <div class="wrap nav">
-    <div class="logo">Daanpay</div>
+    <div class="logo">DaanPay</div>
     <nav class="nav-links">
+      <a href="home.html" class="is-current">Home</a>
       <a href="#">Temples</a>
-      <a href="#">How it works</a>
-      <a href="#">About</a>
+      <a href="../about/about.html">About</a>
       <a href="#">Support</a>
       <a class="btn btn-outline" href="#">Log in</a>
     </nav>
     <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
   </div>
   <nav class="mobile-nav">
+    <a href="home.html" class="is-current">Home</a>
     <a href="#">Temples</a>
-    <a href="#">How it works</a>
-    <a href="#">About</a>
+    <a href="../about/about.html">About</a>
     <a href="#">Support</a>
     <a href="#">Log in</a>
   </nav>
 </header>
-
+ 
 <section class="hero" style="padding-bottom:0;margin-bottom:0;">
   <div class="wrap hero-grid">
     <div>
@@ -76,15 +76,13 @@
     </div>
   </div>
 </section>
-
+ 
 <div class="trust-strip">
   <div class="wrap trust-strip-row">
     <div class="pay-badges">
-      <span>UPI</span>
-      <span>QR code</span>
-      <span>Debit card</span>
-      <span>Credit card</span>
-      <span>256-bit SSL secured</span>
+      <span>🛡 Verified temples</span>
+      <span>🔒 Bank-grade security</span>
+      <span>🧾 Instant digital receipt</span>
     </div>
     <div class="ticker">
       <span class="dot"></span>
@@ -92,6 +90,60 @@
     </div>
   </div>
 </div>
+
+<section class="offer-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>However you'd like to offer</h2>
+        <p>Whichever way feels easiest — the offering reaches the temple the same instant.</p>
+      </div>
+    </div>
+ 
+    <div class="offer-carousel" id="offerSlider" role="region" aria-label="Ways to offer your donation" aria-roledescription="carousel">
+ 
+      <div class="offer-slide is-active" data-index="0">
+        <div class="offer-text">
+          <span class="offer-tag">Fastest at the temple</span>
+          <h3>Scan the QR code, your offering is done in seconds</h3>
+          <p>Most temples display this QR code at the entrance or on their page here. Scan it with any UPI app and your contribution reaches the temple directly — no typing, no waiting.</p>
+        </div>
+        <div class="offer-visual offer-visual-image">
+          <img src="../../assets/qrcode.png" alt="Temple donation QR code">
+        </div>
+      </div>
+ 
+      <div class="offer-slide" data-index="1">
+        <div class="offer-text">
+          <span class="offer-tag">Most familiar</span>
+          <h3>Pay the way you already do, every day</h3>
+          <p>GPay, PhonePe, Paytm, or any UPI app you trust. Approve the request right on your own phone and you're done — no card details to remember, no new app to install.</p>
+        </div>
+        <div class="offer-visual offer-visual-image">
+          <img src="../../assets/upi.png" alt="UPI donation payment option">
+        </div>
+      </div>
+ 
+      <div class="offer-slide" data-index="2">
+        <div class="offer-text">
+          <span class="offer-tag">For every donor</span>
+          <h3>Prefer a card? That works beautifully too</h3>
+          <p>Debit or credit, both are supported — processed securely through licensed payment partners, with the same instant confirmation and receipt as any other method.</p>
+        </div>
+        <div class="offer-visual offer-visual-image">
+          <img src="../../assets/card.png" alt="Debit or credit card donation option">
+        </div>
+      </div>
+ 
+      <div class="offer-dots">
+        <button class="offer-dot is-active" data-index="0" aria-label="Show scan and offer"></button>
+        <button class="offer-dot" data-index="1" aria-label="Show offer with UPI"></button>
+        <button class="offer-dot" data-index="2" aria-label="Show offer with card"></button>
+      </div>
+    </div>
+  </div>
+</section>
+ 
 
 <div class="search-band">
   <div class="wrap">
@@ -121,7 +173,7 @@
     </div>
     <div class="card-row">
       <div class="temple-card">
-        <div class="temple-img"><img src="temples/rameshwaram/images/rameshwaram.jpg" alt="" loading="lazy"></div>
+        <div class="temple-img"><img src="../features/temples/rameshwaram/images/rameshwaram.jpg" alt="Rameshwaram Dham" loading="lazy"></div>
         <div class="temple-body">
           <h3>Rameshwaram Dham</h3>
           <div class="temple-loc">Rameswaram, Tamil Nadu</div>
@@ -132,7 +184,7 @@
         </div>
       </div>
       <div class="temple-card">
-        <div class="temple-img"><img src="temples/badrinath/images/badrinath.jpg" alt="" loading="lazy"></div>
+        <div class="temple-img"><img src="../features/temples/badrinath/images/badrinath.jpg" alt="Badrinath Dham" loading="lazy"></div>
         <div class="temple-body">
           <h3>Badrinath Dham</h3>
           <div class="temple-loc">Badrinath, Uttarakhand</div>
@@ -143,7 +195,7 @@
         </div>
       </div>
       <div class="temple-card">
-        <div class="temple-img"><img src="temples/jagannath/images/jagannath.jpg" alt="" loading="lazy"></div>
+        <div class="temple-img"><img src="../features/temples/jagannathPuri/images/jagannath.jpg" alt="Jagannath Dham" loading="lazy"></div>
         <div class="temple-body">
           <h3>Jagannath Dham</h3>
           <div class="temple-loc">Puri, Odisha</div>
@@ -154,7 +206,7 @@
         </div>
       </div>
       <div class="temple-card">
-        <div class="temple-img"><img src="temples/dwarkadish/images/dwarkadish.jpg" alt="" loading="lazy"></div>
+        <div class="temple-img"><img src="../features/temples/dwarkadhish/images/dwarkadhish.jpeg" alt="Dwarkadhish Dham" loading="lazy"></div>
         <div class="temple-body">
           <h3>Dwarkadish Dham</h3>
           <div class="temple-loc">Dwarka, Gujarat</div>
@@ -190,7 +242,7 @@
   </div>
 </section>
 
-<section class="how-band">
+<section class="how-band" id="how-it-works">
   <div class="wrap">
     <div class="section-head">
       <div>
