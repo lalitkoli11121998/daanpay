@@ -84,6 +84,49 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  /* ---------- Offer method slider ---------- */
+  var offerSlider = document.getElementById('offerSlider');
+  if (offerSlider) {
+    var offerSlides = offerSlider.querySelectorAll('.offer-slide');
+    var offerDots = offerSlider.querySelectorAll('.offer-dot');
+    var offerIndex = 0;
+    var offerTimer = null;
+
+    function goToOfferSlide(i) {
+      offerSlides.forEach(function (s) { s.classList.remove('is-active'); });
+      offerDots.forEach(function (d) { d.classList.remove('is-active'); });
+      offerSlides[i].classList.add('is-active');
+      offerDots[i].classList.add('is-active');
+      offerIndex = i;
+    }
+
+    function startOfferAutoplay() {
+      clearInterval(offerTimer);
+      offerTimer = setInterval(function () {
+        goToOfferSlide((offerIndex + 1) % offerSlides.length);
+      }, 2000);
+    }
+
+    function stopOfferAutoplay() {
+      clearInterval(offerTimer);
+    }
+
+    offerDots.forEach(function (dot) {
+      dot.addEventListener('click', function () {
+        goToOfferSlide(parseInt(dot.getAttribute('data-index'), 10));
+        stopOfferAutoplay();
+        startOfferAutoplay();
+      });
+    });
+
+    offerSlider.addEventListener('mouseenter', stopOfferAutoplay);
+    offerSlider.addEventListener('mouseleave', startOfferAutoplay);
+    offerSlider.addEventListener('focusin', stopOfferAutoplay);
+    offerSlider.addEventListener('focusout', startOfferAutoplay);
+
+    startOfferAutoplay();
+  }
+
   /* ---------- Live donation ticker ---------- */
   var tickerEl = document.getElementById('ticker-text');
   var tickerMessages = [
