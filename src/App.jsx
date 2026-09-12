@@ -7,10 +7,10 @@ import rameshwaramImage from './pages/features/temples/rameshwaram/images/ramesh
 import qrCodeImage from './assets/qrcode.png'
 import upiImage from './assets/upi.png'
 import cardImage from './assets/card.png'
-import homeHtml from './pages/home/home.html?raw'
+import homeHtml from './pages/Home/home.html?raw'
 import aboutHtml from './pages/about/about.html?raw'
 import Header from './Components/Header'
-import './pages/home/home.css'
+import './pages/Home/home.css'
 import './pages/about/about.css'
 import './App.css'
 
