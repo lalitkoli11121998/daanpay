@@ -923,19 +923,6 @@
     "about": "A celebrated granite temple of the Chola period."
   },
   {
-    "id": "rameshwaram-jyotirlinga",
-    "name": "Ramanathaswamy Temple",
-    "image": "rameshwaram.jpg",
-    "location": "Rameswaram, Tamil Nadu",
-    "type": "Jyotirlinga Temple",
-    "deity": "Lord Shiva",
-    "description": "A sacred temple known for its long pillared corridors and theerthams.",
-    "timings": "5:00 AM - 9:00 PM",
-    "established": "12th century",
-    "donors": "3,120 devotees",
-    "about": "A major Char Dham and Jyotirlinga pilgrimage site."
-  },
-  {
     "id": "kanyakumari-devi",
     "name": "Kumari Amman Temple",
     "image": "rammandir.jpg",
@@ -2077,20 +2064,6 @@
     "isMock": true
   },
   {
-    "id": "jyotirlinga-rameshwaram",
-    "name": "Rameshwaram Jyotirlinga",
-    "image": "rammandir.jpg",
-    "location": "Rameswaram, Tamil Nadu",
-    "type": "Shiva Temple",
-    "deity": "Lord Shiva",
-    "description": "Rameshwaram Jyotirlinga is a mock directory record for search and navigation testing.",
-    "timings": "6:00 AM - 9:00 PM",
-    "established": "Ancient",
-    "donors": "Mock record",
-    "about": "Mock details for Rameshwaram Jyotirlinga, maintained for the Daanpay catalogue prototype.",
-    "isMock": true
-  },
-  {
     "id": "jyotirlinga-grishneshwar",
     "name": "Grishneshwar Jyotirlinga",
     "image": "rammandir.jpg",
@@ -2144,20 +2117,6 @@
     "established": "Ancient",
     "donors": "Mock record",
     "about": "Mock details for Jagannath Puri Char Dham, maintained for the Daanpay catalogue prototype.",
-    "isMock": true
-  },
-  {
-    "id": "chardham-rameshwaram",
-    "name": "Rameshwaram Char Dham",
-    "image": "rammandir.jpg",
-    "location": "Rameswaram, Tamil Nadu",
-    "type": "Shiva Temple",
-    "deity": "Lord Shiva",
-    "description": "Rameshwaram Char Dham is a mock directory record for search and navigation testing.",
-    "timings": "6:00 AM - 9:00 PM",
-    "established": "Ancient",
-    "donors": "Mock record",
-    "about": "Mock details for Rameshwaram Char Dham, maintained for the Daanpay catalogue prototype.",
     "isMock": true
   },
   {

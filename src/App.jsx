@@ -12,9 +12,12 @@ import templesData from './data/temples.json'
 import homeHtml from './pages/Home/home.html?raw'
 import aboutHtml from './pages/about/about.html?raw'
 import Header from './Components/Header'
-import TemplePage from './pages/temples/temple'
+import TemplePage from './pages/temple/temple'
+import TemplesPage from './pages/temples/TemplesPage'
 import './pages/Home/home.css'
 import './pages/about/about.css'
+import './pages/shared/legal.css'
+import './pages/shared/legal.jsx'
 import './App.css'
 
 const homeContent = homeHtml
@@ -46,6 +49,7 @@ function App() {
         <Route path="/home.html" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/about/about.html" element={<AboutPage />} />
+        <Route path="/temples/temples.html" element={<TemplesPage />} />
         <Route path="/temples/:templeId" element={<TemplePage />} />
         <Route path="*" element={<HomePage />} />
       </Routes>
@@ -68,6 +72,22 @@ function ScrollToTop() {
 
 function HomePage() {
   const navigate = useNavigate()
+
+  useEffect(() => {
+    const internalLinks = document.querySelectorAll('.home-page a[href^="/"]')
+    const linkHandlers = Array.from(internalLinks, (link) => {
+      const handleClick = (event) => {
+        event.preventDefault()
+        navigate(link.getAttribute('href'))
+      }
+      link.addEventListener('click', handleClick)
+      return { link, handleClick }
+    })
+
+    return () => {
+      linkHandlers.forEach(({ link, handleClick }) => link.removeEventListener('click', handleClick))
+    }
+  }, [navigate])
 
   useEffect(() => {
     const offerSlider = document.getElementById('offerSlider')
@@ -181,6 +201,22 @@ function HomePage() {
       searchButton.removeEventListener('click', runSearch)
       searchInput.removeEventListener('keydown', runSearch)
       chipHandlers.forEach(({ chip, handleChipClick }) => chip.removeEventListener('click', handleChipClick))
+    }
+  }, [navigate])
+
+  useEffect(() => {
+    const stateChips = document.querySelectorAll('.state-chip')
+    const chipHandlers = Array.from(stateChips, (chip) => {
+      const handleClick = () => {
+        const state = chip.textContent.trim()
+        navigate(`/temples/temples.html?state=${encodeURIComponent(state)}`)
+      }
+      chip.addEventListener('click', handleClick)
+      return { chip, handleClick }
+    })
+
+    return () => {
+      chipHandlers.forEach(({ chip, handleClick }) => chip.removeEventListener('click', handleClick))
     }
   }, [navigate])
 
