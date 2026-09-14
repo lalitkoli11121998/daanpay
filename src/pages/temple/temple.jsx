@@ -94,15 +94,15 @@ function TemplePage() {
                         </div>
                         <div>
                             <h4>Support</h4>
-                            <a href="#">Contact us</a>
+                            <a href="mailto:lalitkoli11121998@gmail.com?subject=Daanpay%20support">Contact us</a>
                             <a href="#">FAQs</a>
-                            <a href="#">Report an issue</a>
+                            <a href="mailto:lalitkoli11121998@gmail.com?subject=Report%20an%20issue">Report an issue</a>
                         </div>
                         <div>
                             <h4>Legal</h4>
-                            <a href="#">Terms of service</a>
-                            <a href="#">Privacy policy</a>
-                            <a href="#">Refund policy</a>
+                           <a href="#" data-modal="terms">Terms of service</a>
+                           <a href="#" data-modal="privacy">Privacy policy</a>
+                           <a href="#" data-modal="refund">Refund policy</a>
                         </div>
                     </div>
                     <div className="foot-bottom">
